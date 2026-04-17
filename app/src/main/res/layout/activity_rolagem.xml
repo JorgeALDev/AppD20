@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cinza_escuro"
+    >
+
+    <ImageButton
+        android:id="@+id/voltar"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_botao_voltar"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/verde"
+        app:tint="@color/branco" />
+
+    <TextView
+        android:id="@+id/nome_rpg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do RPG"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="@color/cinza_menos_escuro"
+        android:layout_margin="24dp"
+        android:layout_above="@+id/imagem_dado"
+        android:textColor="@color/branco"
+        />
+
+    <ImageView
+        android:id="@+id/imagem_dado"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_d20"
+        />
+
+
+    <TextView
+        android:id="@+id/resultado_dado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="◎"
+        android:textStyle="bold"
+        android:textSize="42sp"
+        android:textColor="@color/verde"
+        />
+
+    <ImageButton
+        android:id="@+id/girar"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/imagem_dado"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_girar"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/verde"
+        app:tint="@color/branco" />
+
+</RelativeLayout>

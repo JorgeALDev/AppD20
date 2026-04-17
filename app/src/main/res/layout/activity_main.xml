@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cinza_escuro"
+    >
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qual RPG você vai jogar?"
+        android:textStyle="bold"
+        android:layout_above="@+id/nome_rpg_resposta"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="@color/cinza_menos_escuro"
+        android:layout_margin="24dp"
+        android:textColor="@color/branco"
+        />
+
+    <EditText
+        android:id="@+id/nome_rpg_resposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        android:hint="Digite aqui..."
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="@color/cinza_menos_escuro"
+        android:textColor="@color/branco"
+        />
+
+    <Button
+        android:id="@+id/botao_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nome_rpg_resposta"
+        android:layout_centerHorizontal="true"
+        android:text="Confirmar RPG"
+        android:textColor="@color/branco"
+        android:textSize="24sp"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/verde"
+        />
+
+</RelativeLayout>

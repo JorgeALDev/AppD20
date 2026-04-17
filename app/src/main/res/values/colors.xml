@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cinza_escuro">#181818</color>
+    <color name="cinza_menos_escuro">#242424</color>
+    <color name="branco">#EAEAEA</color>
+    <color name="verde">#4CAF50</color>
+</resources>
